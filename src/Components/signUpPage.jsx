@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Google from "../../src/assets/Google.svg";
 import Facebook from "../../src/assets/Facebook.svg";
-import Button from "../components/shared/button";
+import Button from "../Components/shared/button";
 import { Input } from "../components/ui/input";
 import React from "react";
 import {
@@ -15,7 +15,6 @@ import {
   FormField,
   FormItem,
   FormLabel,
-  FormDescription,
   FormMessage,
 } from "../components/ui/form";
 
