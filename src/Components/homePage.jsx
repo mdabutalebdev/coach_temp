@@ -8,11 +8,15 @@ import Works from './works'
 import Reviews from './reviews'
 import Footer from './footer'
 import Blog from './blog'
+import Menu from './shared/menu'
 
 const HomePage = () => {
   return (
     <>
+     <div className="shadow">
      <Navbar />
+     <Menu />
+     </div>
      <Header />
      <FeturedCategories />
      <PeerGroup />
