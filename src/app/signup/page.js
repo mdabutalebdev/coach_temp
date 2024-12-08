@@ -1,5 +1,5 @@
 import React from 'react'
-import SignUpPage from '@/Components/SignUpPage'
+import SignUpPage from '../../Components/signUpPage'
 const page = () => {
   return (
     <div>
@@ -7,5 +7,7 @@ const page = () => {
     </div>
   )
 }
+
+
 
 export default page
