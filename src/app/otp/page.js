@@ -1,4 +1,4 @@
-import OtpPage from '../../Components/otpPage'
+import OtpPage from '@/Components/otpPage'
 import React from 'react'
 
 const page = () => {

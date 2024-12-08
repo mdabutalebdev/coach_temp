@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -6,8 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Google from "../../src/assets/Google.svg";
 import Facebook from "../../src/assets/Facebook.svg";
-import Button from "../components/shared/button";
-import React from "react";
+import Button from "@/components/shared/button";
 import {
   Form,
   FormControl,
@@ -16,8 +16,8 @@ import {
   FormLabel,
   FormDescription,
   FormMessage,
-} from "../Components/ui/form";
-import { Input } from "../Components/ui/input";
+} from "@/Components/ui/form";
+import { Input } from "@/Components/ui/input";
 
 const formSchema = z.object({
   email: z

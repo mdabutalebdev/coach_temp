@@ -4,8 +4,8 @@ import {
   InputOTP,
   InputOTPGroup,
   InputOTPSlot,
-} from "../Components/ui/input-otp";
-import Button from "../Components/shared/button";
+} from "@/Components/ui/input-otp";
+import Button from "@/Components/shared/button";
 
 const OtpPage = () => {
   return (
