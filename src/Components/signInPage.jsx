@@ -6,8 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Google from "../../src/assets/Google.svg";
 import Facebook from "../../src/assets/Facebook.svg";
-import Button from "@/components/shared/button";
- 
+import Button from "../components/shared/button";
 import React from "react";
 import {
   Form,
@@ -17,8 +16,8 @@ import {
   FormLabel,
   FormDescription,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
+} from "../Components/ui/form";
+import { Input } from "../Components/ui/input";
 
 const formSchema = z.object({
   email: z

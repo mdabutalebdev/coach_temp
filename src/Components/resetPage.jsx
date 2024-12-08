@@ -3,7 +3,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import Button from "../Components/shared/button";
- 
 import React from "react";
 import {
   Form,
@@ -11,10 +10,9 @@ import {
   FormField,
   FormItem,
   FormLabel,
-  FormDescription,
   FormMessage,
 } from "../Components/ui/form";
-import { Input } from "./ui/input";
+import { Input } from "../Components/ui/input";
 
 const formSchema = z.object({
   email: z
@@ -42,46 +40,43 @@ export default function Login() {
   return (
     <section className="bg-BgColor py-32">
       <div className="container mx-auto w-[607px] h-[723px] bg-white shadow-sm rounded-[20px]">
-        
-          <div className="">
-            <h3 className="font-medium  text-[64px] text-primaryColor text-center pt-40">
-              Reset Password
-            </h3>
-          </div>
-          <div className="w-full sm:w-[580px] mx-auto">
-              <Form {...form}>
-                <form onSubmit={form.handleSubmit(handleSubmit)}>
-                  <div className="grid grid-cols-1 gap-4">
-                    <FormField
-                      control={form.control}
-                      name="email"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel className="afrm-label">
-                            Enter your email
-                          </FormLabel>
-                          <FormControl>
-                            <Input
-                              type="email"
-                              placeholder="account@email.com"
-                              {...field}
-                              className="py-6"
-                            />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
+        <div className="">
+          <h3 className="font-medium  text-[64px] text-primaryColor text-center pt-40">
+            Reset Password
+          </h3>
+        </div>
+        <div className="w-full sm:w-[580px] mx-auto">
+          <Form {...form}>
+            <form onSubmit={form.handleSubmit(handleSubmit)}>
+              <div className="grid grid-cols-1 gap-4">
+                <FormField
+                  control={form.control}
+                  name="email"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel className="afrm-label">
+                        Enter your email
+                      </FormLabel>
+                      <FormControl>
+                        <Input
+                          type="email"
+                          placeholder="account@email.com"
+                          {...field}
+                          className="py-6"
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
 
-                    <Button className="text-white w-full !mt-6">
-                      Reset Password
-                    </Button>
-                  </div>
-                </form>
-              </Form>
-            
-          </div>
-        
+                <Button className="text-white w-full !mt-6">
+                  Reset Password
+                </Button>
+              </div>
+            </form>
+          </Form>
+        </div>
       </div>
     </section>
   );

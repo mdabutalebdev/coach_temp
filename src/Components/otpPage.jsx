@@ -3,7 +3,6 @@
 import {
   InputOTP,
   InputOTPGroup,
-  InputOTPSeparator,
   InputOTPSlot,
 } from "../Components/ui/input-otp";
 import Button from "../Components/shared/button";
