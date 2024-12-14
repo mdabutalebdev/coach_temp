@@ -3,6 +3,7 @@ import Image from "next/image";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
 const FeturedCard = ({ htext, className, ptext, src }) => {
+  
   return (
  
        
@@ -10,7 +11,11 @@ const FeturedCard = ({ htext, className, ptext, src }) => {
           className={`h-[298px] w-[369px] rounded-xl text-center bg-white border border-[#EAF2FB] hover:shadow-md group`}
         >
           <div className="h-16 w-16 rounded-full bg-EAF2FB shadow-[#EAF2FB] mx-auto relative my-5 shadow-[0_10px_20px_rgb(234,242,251)]"> 
-             <Image src={src} alt="alt" className={`ml-20 h-[26px] w-6 absolute top-5 right-5`} />
+             
+             <div className="absolute top-5 left-4">
+             {src}
+             </div>
+
           </div>
           <h3 className={`text-[20px] font-bold  ${className}`}>{htext}</h3>
           <p

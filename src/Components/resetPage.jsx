@@ -39,13 +39,13 @@ export default function Login() {
 
   return (
     <section className="bg-BgColor py-32">
-      <div className="container mx-auto w-[607px] h-[723px] bg-white shadow-sm rounded-[20px]">
+      <div className="container mx-auto w-[607px] h-[723px] bg-white shadow-sm rounded-[20px] p-10">
         <div className="">
           <h3 className="font-medium  text-[64px] text-primaryColor text-center pt-40">
             Reset Password
           </h3>
         </div>
-        <div className="w-full sm:w-[580px] mx-auto">
+        <div className="xl:w-full sm:w-[580px]  mx-auto">
           <Form {...form}>
             <form onSubmit={form.handleSubmit(handleSubmit)}>
               <div className="grid grid-cols-1 gap-4">
@@ -62,7 +62,7 @@ export default function Login() {
                           type="email"
                           placeholder="account@email.com"
                           {...field}
-                          className="py-6"
+                          className="py-6 focus-visible:ring-0"
                         />
                       </FormControl>
                       <FormMessage />

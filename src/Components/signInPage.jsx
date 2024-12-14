@@ -107,7 +107,7 @@ export default function Login() {
                         <FormItem>
                           <FormLabel className="afrm-label">Password</FormLabel>
                           <FormControl>
-                            <Input type="password" {...field} placeholder="*******"/>
+                            <Input type="password" {...field} placeholder="*******" className="focus-visible:ring-0"/>
                           </FormControl>
                             
                            <Button className="text-white w-full !mt-6">
@@ -115,7 +115,7 @@ export default function Login() {
                             </Button>
                          
                           <FormDescription className="text-center !no-underline">
-                            <Link className="frm-alink text-BtnColor" href="#">
+                            <Link className="frm-alink text-BtnColor" href="/reset">
                               Forgot Your password?
                             </Link>
                           </FormDescription>

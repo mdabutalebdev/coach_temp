@@ -5,7 +5,7 @@ import Button from "./shared/button";
 
 const Footer = () => {
   return (
-    <section className="py-20 bg-[#222B60] mt-[800px]">
+    <section className="py-20 bg-[#222B60]">
       <div className="container">
         <div className="flex  gap-y-5 justify-between">
           {/* part one start */}

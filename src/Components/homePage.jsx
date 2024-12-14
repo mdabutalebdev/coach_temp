@@ -9,6 +9,7 @@ import Reviews from './reviews'
 import Footer from './footer'
 import Blog from './blog'
 import Menu from './shared/menu'
+import Subscribe from './subscribe'
 
 const HomePage = () => {
   return (
@@ -23,6 +24,7 @@ const HomePage = () => {
      <Works />
      <Reviews />
      <Blog />
+     <Subscribe />
      <Footer />
     </>
   )

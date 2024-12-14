@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Logo from "../assets/logo.png"
 import Button from './shared/button'
 import { Input } from './ui/input';
+import Link from "next/link";
  
 
 const Navbar = () => {
@@ -14,13 +15,12 @@ const Navbar = () => {
                <Image
                src={Logo}
                alt='Logo'
-               
-               
+               className='cursor-pointer'
                />
          </div>
          <div className="w-[558px] ">
            <div className="relative">
-           <Input  placeholder="Search" className="py-6 pl-14"/>
+           <Input  placeholder="Search" className="py-6 pl-14 focus-visible:ring-0"/>  
            <CiSearch className='h-[22px] w-[22px] absolute top-[14px] left-6 cursor-pointer text-[#BDBDBD]'/>
            </div>
          
@@ -29,9 +29,11 @@ const Navbar = () => {
            <Button className='mr-3 text-white'>
             Browse All
             </Button>
-            <Button className='!bg-transparent !text-primaryColor'>
-             Login
-            </Button>
+            <Link href="/signin" >
+              <Button  className='!bg-transparent !text-primaryColor'>
+              Login
+              </Button>
+              </Link>
            </div>
          </div>
          

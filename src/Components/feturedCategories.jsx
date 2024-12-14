@@ -1,14 +1,10 @@
- 
 
 import React from 'react'
 import FeturedCard from './shared/feturedCard'
 import { CiSearch } from "react-icons/ci";
- 
 import { Input } from '@/components/ui/input';
 import { FeturedData } from '../../data/Data';
  
-
-
 
 const FeturedCategories = () => {
   return (
@@ -17,7 +13,7 @@ const FeturedCategories = () => {
     <div className="flex justify-between">
     <h3 className='text-primaryColor font-extrabold text-[48px]'>Featured Categories</h3>
     <div className="relative">
-    <Input placeholder="Search anything" className="w-[324px] h-[48px] pl-14"/>
+    <Input placeholder="Search anything" className="w-[324px] h-[48px] pl-14 focus-visible:ring-0"/>
   <CiSearch className='h-[22px] w-[22px] absolute top-[14px] left-6 cursor-pointer text-[#BDBDBD]'/>
     </div>
 </div>
