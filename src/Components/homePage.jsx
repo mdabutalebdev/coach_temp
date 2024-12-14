@@ -1,5 +1,5 @@
 import React from 'react'
- 
+
 import Navbar from './navbar'
 import Header from './header'
 import FeturedCategories from './feturedCategories'
@@ -13,17 +13,17 @@ import Menu from './shared/menu'
 const HomePage = () => {
   return (
     <>
-     <div className="shadow">
-     <Navbar />
-     <Menu />
-     </div>
-     <Header />
-     <FeturedCategories />
-     <PeerGroup />
-     <Works />
-     <Reviews />
-     <Blog />
-     <Footer />
+      <div className="shadow">
+        <Navbar />
+        <Menu />
+      </div>
+      <Header />
+      <FeturedCategories />
+      <PeerGroup />
+      <Works />
+      <Reviews />
+      <Blog />
+      <Footer />
     </>
   )
 }
