@@ -221,6 +221,11 @@ const PeerGroupPage = () => {
           />
           </div>
       </div>
+      <div className="container flex justify-center mt-10">
+        <Button className="!px-10 !py-4 !bg-transparent !text-BtnColor border">
+        Load more
+        </Button>
+      </div>
     </section>
   );
 };

@@ -8,6 +8,7 @@ import {
   } from "@/components/ui/card";
   import Button from "./button";
   import Image from "next/image";
+import Link from "next/link";
   
   
   
@@ -18,9 +19,9 @@ import {
         <div className="flex">
         <CardHeader className="">
           <Image
-             src={src1}
-             alt="alt"
-             className=' '
+            src={src1}
+            alt="alt"
+            className=' '
           />
           </CardHeader>
           <CardHeader className="">
@@ -74,7 +75,7 @@ import {
       <p className="text-gray-500 text-md font-normal leading-6"> {description} </p>
       </CardContent>
       {/* peragraph end */}
-  
+
       {/*  btn start */}
       <CardContent className="flex gap-2 mr-2 w-full flex-wrap">
           <Button className="font-normal text-[12px] !text-primaryColor   h-[36px] !rounded-[43px] !bg-BgColor">
@@ -92,21 +93,23 @@ import {
         
       </CardContent>
       {/* btn end */}
-  
-  
-       {/* last btn start */}
+
+
+      {/* last btn start */}
       <CardFooter className="flex justify-between">
           <div className="flex">
           <h3 className="font-extrabold text-[20px] text-primaryColor">{price}</h3> <span className="font-normal text-[12px] text-primaryColor opacity-40 pt-2">{Hour}</span>
           </div>
+         <Link href='details'>
          <Button className="!bg-MenuHColor !text-BtnColor">
           {lastBtn}
          </Button>
+         
+         </Link>
       </CardFooter>
       {/* last btn end */}
     </Card>
-    );
-  };
-  
-  export default GroupCard;
-  
+  );
+};
+
+export default GroupCard;

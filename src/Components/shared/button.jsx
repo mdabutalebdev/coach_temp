@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Button = ({ TagName="button", children, className="", ...props }) => {
+const Button = ({ TagName = "button", children, className = "", ...props }) => {
   return (
-    <TagName 
+    <TagName
       className={`bg-BtnColor text-white px-6 py-2 rounded-[8px] ${className}`}
       {...props}
     >
@@ -14,6 +14,3 @@ const Button = ({ TagName="button", children, className="", ...props }) => {
 export default Button
 
 
-
-
- 

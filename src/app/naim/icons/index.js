@@ -1,0 +1,16 @@
+export { LeftArr } from "./leftArr";
+export { Flag } from "./flag";
+export { Star } from "./star";
+export { Share } from "./share";
+export { Save } from "./save";
+export { Play } from "./play";
+export { Contact } from "./contact";
+export { Watch } from "./watch";
+export { Compare } from "./compare";
+export { Search } from "./search";
+export { Drop } from "./drop";
+export { Email } from "./email";
+export { Phone } from "./phone";
+export { Location } from "./location";
+export { Time } from "./time";
+export { PhoneV2 } from "./phoneV2";

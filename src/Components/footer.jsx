@@ -1,6 +1,6 @@
- 
+
 import { FaFacebook, FaGoogle, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
- 
+
 import Button from "./shared/button";
 
 const Footer = () => {
@@ -11,13 +11,13 @@ const Footer = () => {
           {/* part one start */}
           <div className="">
             <p className="text-base font-openSans font-normal text-white pt-[15px] pb-[32px] max-w-[263px]">
-             You’ve got things to do. With seamless integration, you won’thave to wait long for a code review. Your online store can start accepting digital currencies seamlessly and most importantly
+              You’ve got things to do. With seamless integration, you won’thave to wait long for a code review. Your online store can start accepting digital currencies seamlessly and most importantly
             </p>
             {/* social media */}
             <div className="flex items-center gap-x-6">
               <div className="cursor-pointer text-3xl text-white">
                 <span>
-                <FaFacebook />
+                  <FaFacebook />
                 </span>
               </div>
               <div className="cursor-pointer text-3xl text-white">
@@ -25,7 +25,7 @@ const Footer = () => {
                   <FaTwitter />
                 </span>
               </div>
-              
+
               <div className="cursor-pointer text-3xl text-white">
                 <span>
                   <FaInstagram />
@@ -38,23 +38,23 @@ const Footer = () => {
               </div>
               <div className=" cursor-pointer text-3xl text-white">
                 <span>
-                <FaGoogle />
+                  <FaGoogle />
                 </span>
               </div>
             </div>
           </div>
-           {/* part one end */}
-           {/* part two start */}
+          {/* part one end */}
+          {/* part two start */}
           <div className="">
-          <ul className="flex flex-col gap-y-4">
+            <ul className="flex flex-col gap-y-4">
               <li className="font-openSans font-bold text-white text-[18px]">
-              Jump To
+                Jump To
               </li>
               {[
                 "Privacy Policy",
                 "Terms of Service",
                 "Pricing",
-                 
+
               ].map((item, index) => (
                 <li
                   key={index}
@@ -67,17 +67,17 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-       {/* part two end */}
-        {/* part three start */}
+          {/* part two end */}
+          {/* part three start */}
           <div className="">
-          <ul className="flex flex-col gap-y-4">
+            <ul className="flex flex-col gap-y-4">
               <li className="font-openSans font-bold text-white text-[18px]">
-              Contributor
+                Contributor
               </li>
               {[
                 "Be a Contributor",
                 "Contributor FAQ",
-                 
+
               ].map((item, index) => (
                 <li
                   key={index}
@@ -88,31 +88,31 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-           
-            {/* part three end */}
-            {/* part 4th start */}
-            <div className="">
+
+          {/* part three end */}
+          {/* part 4th start */}
+          <div className="">
             <ul className="flex flex-col gap-y-4">
               <li className="font-openSans font-bold text-white text-[18px]">
-              Get in touch
+                Get in touch
               </li>
               <p className="w-[180px] text-white pb-5">hello@Payslave.com
-              734 Broadway, Floor 5 New York, NY 10003</p>
+                734 Broadway, Floor 5 New York, NY 10003</p>
             </ul>
-              <div className="flex">
-                 <Button className="mr-2 !bg-transparent border border-white text-white">
-                 Sign Up
-                 </Button>
-                 <Button className="text-white">
-                 Login
-                 </Button>
-              </div>
+            <div className="flex">
+              <Button className="mr-2 !bg-transparent border border-white text-white">
+                Sign Up
+              </Button>
+              <Button className="text-white">
+                Login
+              </Button>
             </div>
-             {/* part 4th end */}
-         
+          </div>
+          {/* part 4th end */}
+
         </div>
         <div className="border-t border-white mt-10">
-            <p className="text-white text-center pt-5">© 2021 Paynow - Payment Services. All rights reserved.</p>
+          <p className="text-white text-center pt-5">© 2021 Paynow - Payment Services. All rights reserved.</p>
         </div>
       </div>
     </section>
