@@ -1,5 +1,5 @@
 import React from 'react'
-import { Input } from "@/components/ui/input"
+import { Input } from "@/Components/ui/input"
 import Button from './shared/button'
 import { IoMail } from "react-icons/io5";
 

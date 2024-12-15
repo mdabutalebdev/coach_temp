@@ -4,7 +4,7 @@ import group_profile from '../../../assets/group_profile.png'
 import {
     CardDescription,
     CardContent,
-} from "@/components/ui/card";
+} from "@/Components/ui/card";
 import { Compare, Contact, Flag, Play, Save, Share, Watch } from '../icons';
 import { Star } from '../icons';
 import Button from '@/Components/shared/button';
