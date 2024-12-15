@@ -2,7 +2,7 @@
 import React from 'react'
 import FeturedCard from './shared/feturedCard'
 import { CiSearch } from "react-icons/ci";
-import { Input } from '@/components/ui/input';
+import { Input } from '@/Components/ui/input';
 import { FeturedData } from '../../data/Data';
  
 

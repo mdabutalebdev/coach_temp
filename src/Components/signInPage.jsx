@@ -7,7 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Google from "../../src/assets/Google.svg";
 import Facebook from "../../src/assets/Facebook.svg";
-import Button from "@/components/shared/button";
+import Button from "@/Components/shared/button";
 import {
   Form,
   FormControl,
