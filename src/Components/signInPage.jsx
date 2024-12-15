@@ -16,7 +16,7 @@ import {
   FormLabel,
   FormDescription,
   FormMessage,
-} from "@/Components/ui/form";
+} from "../Components/ui/form";
 import { Input } from "@/Components/ui/input";
 
 const formSchema = z.object({

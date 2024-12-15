@@ -14,7 +14,7 @@ const Questions = () => {
     function activeClick(index) {
         active == index ? setactive(null) : setactive(index)
     }
-    console.log(active);
+   
 
     return (
         <div className='w-[926px] mx-auto'>
